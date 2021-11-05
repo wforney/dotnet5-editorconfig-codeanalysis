@@ -3,7 +3,7 @@
     Configures roselyn analyzers for all projects (so long as one doesn't override Directory.Build.targets)
     with a common ruleset from editorconfig.
 
-    Analyzers will be enabled via NuGet when targetting pre-.NET 5 to as to retain the same code analysis rules:
+    Analyzers will be enabled via NuGet when targetting pre-.NET 5 so as to retain the same code analysis rules:
     https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019
 
     If all developers have .NET SDK 5 one could remove Microsoft.CodeAnalysis.NetAnalyzers
@@ -21,9 +21,9 @@
         <IsNetFramework>false</IsNetFramework>
         <IsNetFramework Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">true</IsNetFramework>
         <IsNetStandard>false</IsNetStandard>
-        <IsNetStandard Condition="$(TargetFramework.Contains(`netcoreapp`))">true</IsNetStandard>
+        <IsNetStandard Condition="$(TargetFramework.Contains(`netstandard`))">true</IsNetStandard>
         <IsNetCore>false</IsNetCore>
-        <IsNetCore Condition="$(TargetFramework.Contains(`netstandard`))">true</IsNetCore>
+        <IsNetCore Condition="$(TargetFramework.Contains(`netcoreapp`))">true</IsNetCore>
 
         <UseNuGetBasedAnalyzers>false</UseNuGetBasedAnalyzers>
         <UseNuGetBasedAnalyzers Condition="$(IsNetFramework) OR $(IsNetStandard) OR $(IsNetCore)">true</UseNuGetBasedAnalyzers>

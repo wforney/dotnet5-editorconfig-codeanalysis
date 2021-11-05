@@ -30,6 +30,61 @@ trim_trailing_whitespace = true
 # XML project files
 [*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
 indent_size = 2
+dotnet_style_operator_placement_when_wrapping=end_of_line
+dotnet_style_prefer_auto_properties=true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment=true:suggestion
+dotnet_style_prefer_conditional_expression_over_return=true:suggestion
+dotnet_style_predefined_type_for_locals_parameters_members=true:suggestion
+dotnet_style_predefined_type_for_member_access=true:suggestion
+dotnet_style_require_accessibility_modifiers=for_non_interface_members:warning
+dotnet_style_parentheses_in_arithmetic_binary_operators=always_for_clarity:suggestion
+dotnet_style_parentheses_in_other_binary_operators=always_for_clarity:suggestion
+dotnet_style_parentheses_in_relational_binary_operators=always_for_clarity:suggestion
+dotnet_style_parentheses_in_other_operators=never_if_unnecessary:suggestion
+dotnet_diagnostic.CA1000.severity=suggestion
+dotnet_diagnostic.CA1010.severity=suggestion
+dotnet_diagnostic.CA1036.severity=suggestion
+dotnet_diagnostic.CA1051.severity=warning
+dotnet_diagnostic.CA1304.severity=suggestion
+dotnet_diagnostic.CA1305.severity=suggestion
+dotnet_diagnostic.CA1310.severity=suggestion
+dotnet_diagnostic.CA1707.severity=warning
+dotnet_diagnostic.CA1708.severity=warning
+dotnet_diagnostic.CA1710.severity=suggestion
+dotnet_diagnostic.CA1711.severity=suggestion
+dotnet_diagnostic.CA1712.severity=warning
+dotnet_diagnostic.CA1715.severity=suggestion
+dotnet_diagnostic.CA1716.severity=error
+dotnet_diagnostic.CA1720.severity=warning
+dotnet_diagnostic.CA1725.severity=warning
+dotnet_diagnostic.CA1838.severity=warning
+dotnet_diagnostic.CA3061.severity=suggestion
+dotnet_diagnostic.CA3075.severity=suggestion
+dotnet_diagnostic.CA3147.severity=suggestion
+dotnet_diagnostic.CA5350.severity=suggestion
+dotnet_diagnostic.CA5351.severity=suggestion
+dotnet_diagnostic.CA5359.severity=suggestion
+dotnet_diagnostic.CA5360.severity=suggestion
+dotnet_diagnostic.CA5363.severity=suggestion
+dotnet_diagnostic.CA5364.severity=suggestion
+dotnet_diagnostic.CA5365.severity=suggestion
+dotnet_diagnostic.CA5366.severity=suggestion
+dotnet_diagnostic.CA5368.severity=suggestion
+dotnet_diagnostic.CA5369.severity=suggestion
+dotnet_diagnostic.CA5370.severity=suggestion
+dotnet_diagnostic.CA5371.severity=suggestion
+dotnet_diagnostic.CA5372.severity=suggestion
+dotnet_diagnostic.CA5373.severity=suggestion
+dotnet_diagnostic.CA5374.severity=suggestion
+dotnet_diagnostic.CA5379.severity=suggestion
+dotnet_diagnostic.CA5384.severity=suggestion
+dotnet_diagnostic.CA5385.severity=suggestion
+dotnet_diagnostic.CA5397.severity=warning
+dotnet_diagnostic.VSTHRD200.severity=suggestion
+dotnet_diagnostic.VSTHRD111.severity=suggestion
+dotnet_diagnostic.CA2201.severity=warning
+dotnet_diagnostic.CA2215.severity=error
+dotnet_diagnostic.CA2229.severity=warning
 
 # JSON files
 [*.json]
@@ -56,7 +111,7 @@ indent_size = 2
 [*.cs]
 
 # Organize usings
-dotnet_sort_system_directives_first = true
+dotnet_sort_system_directives_first = false
 dotnet_separate_import_directive_groups = false
 
 # IDE0073: File header
@@ -115,25 +170,25 @@ dotnet_remove_unnecessary_suppression_exclusions = none
 [*.cs]
 
 # var preferences
-csharp_style_var_elsewhere = true
-csharp_style_var_for_built_in_types = true
-csharp_style_var_when_type_is_apparent = true
+csharp_style_var_elsewhere =true:suggestion
+csharp_style_var_for_built_in_types =true:suggestion
+csharp_style_var_when_type_is_apparent =true:suggestion
 
 # Expression-bodied members
-csharp_style_expression_bodied_accessors = true
-csharp_style_expression_bodied_constructors = false
-csharp_style_expression_bodied_indexers = true
-csharp_style_expression_bodied_lambdas = true
-csharp_style_expression_bodied_local_functions = false
-csharp_style_expression_bodied_methods = false
-csharp_style_expression_bodied_operators = false
-csharp_style_expression_bodied_properties = true
+csharp_style_expression_bodied_accessors =true:suggestion
+csharp_style_expression_bodied_constructors =false:suggestion
+csharp_style_expression_bodied_indexers =true:suggestion
+csharp_style_expression_bodied_lambdas =true:suggestion
+csharp_style_expression_bodied_local_functions =false:suggestion
+csharp_style_expression_bodied_methods =false:suggestion
+csharp_style_expression_bodied_operators =false:suggestion
+csharp_style_expression_bodied_properties =true:suggestion
 
 # Pattern matching preferences
 csharp_style_pattern_matching_over_as_with_null_check = true
 csharp_style_pattern_matching_over_is_with_cast_check = true
 csharp_style_prefer_not_pattern = true
-csharp_style_prefer_pattern_matching = true
+csharp_style_prefer_pattern_matching =true:suggestion
 csharp_style_prefer_switch_expression = true
 
 # Null-checking preferences
@@ -159,7 +214,7 @@ csharp_style_unused_value_assignment_preference = discard_variable
 csharp_style_unused_value_expression_statement_preference = discard_variable
 
 # 'using' directive preferences
-csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement =inside_namespace:silent
 
 ###############################
 # C# Formatting Rules         #
@@ -413,7 +468,7 @@ dotnet_diagnostic.IDE0056.severity = warning
 # See file_header_template above
 
 # IDE0058: Remove unused expression value
-dotnet_diagnostic.IDE0058.severity = silent
+dotnet_diagnostic.IDE0058.severity =suggestion
 
 # IDE0059: Remove unnecessary value assignment
 dotnet_diagnostic.IDE0059.severity = warning
@@ -501,12 +556,29 @@ dotnet_diagnostic.IDE1006.severity = warning
 
 ### Customziation
 dotnet_diagnostic.CA1819.severity = error
+dotnet_diagnostic.CA1001.severity=warning
+dotnet_diagnostic.CA1200.severity=suggestion
+dotnet_diagnostic.CA1309.severity=suggestion
+dotnet_diagnostic.CA1805.severity=warning
+dotnet_diagnostic.CA3076.severity=suggestion
+dotnet_diagnostic.CA3077.severity=suggestion
+dotnet_diagnostic.IDE0057.severity=suggestion
+dotnet_diagnostic.IDE0120.severity=suggestion
+dotnet_diagnostic.IDE0130.severity=suggestion
+dotnet_diagnostic.IDE0150.severity=suggestion
+dotnet_diagnostic.IDE0160.severity=suggestion
+dotnet_diagnostic.IDE0161.severity=suggestion
+dotnet_diagnostic.IDE2000.severity=suggestion
+dotnet_diagnostic.IDE2001.severity=suggestion
+dotnet_diagnostic.IDE2002.severity=suggestion
+dotnet_diagnostic.IDE2003.severity=suggestion
+dotnet_diagnostic.IDE2004.severity=suggestion
 
 ##############################################################
 # Unit tests                                                 #
 ##############################################################
 [*{.test,Test}.cs]
-# Disable warnings not relevnat for tests
+# Disable warnings not relevant for tests
 dotnet_diagnostic.VSTHRD200.severity = none
 dotnet_diagnostic.CA1707.severity = none
 dotnet_diagnostic.CA2007.severity = none

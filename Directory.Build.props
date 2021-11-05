@@ -1,0 +1,15 @@
+﻿<Project>
+ <PropertyGroup>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+ </PropertyGroup>
+ <ItemGroup>
+    <!-- The following allows some C# 9 support with .NET Core 3.1 https://github.com/manuelroemer/IsExternalInit -->
+    <PackageReference Include="IsExternalInit" Version="1.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

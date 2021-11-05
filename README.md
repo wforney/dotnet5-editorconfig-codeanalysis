@@ -1,8 +1,8 @@
-# Code analysis and EditorConfig in .NET 5
+# Code analysis and EditorConfig in .NET 6
 
 ## What does this sample include?
 
-This sample provides an example implementation for providing code style and code analysis within the Visual Studio IDEs and during builds using .NET 5.
+This sample provides an example implementation for providing code style and code analysis within the Visual Studio IDEs and during builds using .NET 6.
 
 The reference is structured such that code analysis is added to all csproj files within your repository without having to edit each one individually.
 
